@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.countdown {
+    font-size: 15em;
+    font-weight: bold;
+    color: yellow;
+    font-family: 阿里黑;
+}
+
+.celebration {
+    font-size: 18em;
+    color: yellow;
+    display: none;
+    font-family: 阿里黑;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+@font-face {
+    font-family: "阿里黑";
+  src: url("./fonts/AlimamaShuHeiTi-Bold.otf") format("opentype"),
+  url("./fonts/AlimamaShuHeiTi-Bold.woff") format("woff"),
+  url("./fonts/AlimamaShuHeiTi-Bold.woff2") format("woff2"),
+  url("./fonts/AlimamaShuHeiTi-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
