@@ -13,25 +13,30 @@ body {
 }
 
 .countdown {
+    position: absolute;
     font-size: 15em;
     font-weight: bold;
     color: yellow;
+    z-index: 10;
+    text-decoration: none;
+    cursor: pointer;
     font-family: 阿里黑;
 }
 
 .celebration {
+    position: absolute;
     font-size: 18em;
     color: yellow;
     display: none;
+    z-index: 10;
+    text-decoration: none;
+    cursor: pointer;
     font-family: 阿里黑;
 }
-
 canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    pointer-events: none;
+  display: block;
+  margin: auto;
+  -webkit-user-select:none;
 }
 
 @font-face {
@@ -44,3 +49,4 @@ canvas {
   font-style: normal;
 
 }
+
