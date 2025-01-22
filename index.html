@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>跨年倒计时</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet"href="./css/footer.css">
+    
 </head>
 <body>
     <!-- 倒计时 -->
-    <div id="countdown" class="countdown">00:00:00:00:00</div>
-    <div id="celebration" class="celebration">过年了！</div>
+    <a id="countdown" class="countdown" id="su1">00:00:00:00:00</a>
+    <a id="celebration" class="celebration" id="su2">过年了！</a>
+    <!-- 烟花 -->
+    <canvas id="canvas"></canvas>
     <!--footer-->
     <div class="footer">
         <a href="https://github.com/Enigma-Soul/CTNY"class="button-link">Github</a>
@@ -26,6 +30,10 @@
     <script src="./js/countdown.js"></script>
     <script src="./js/fullscreen.js"></script>
     <script src="./js/music.js"></script>
+    <script src="./js/createjs.js"></script>
+    <script src="./js/firework.js"></script>
+    <script src="./js/surprise.js"></script>
+    
     
 </body>
 </html>
