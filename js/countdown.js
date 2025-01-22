@@ -37,7 +37,6 @@ function formatCountdown(mm, d, h, m, s) {
     if (m > 0 || h > 0 || d > 0 || mm > 0) timeString += m + ':';
 
     // 删除单个数值中的十位 0 (特殊处理秒)
-    timeString = timeString.replace(/:0/g, ':');
     timeString += s;
     return timeString;
 }

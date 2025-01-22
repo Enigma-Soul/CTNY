@@ -1,3 +1,4 @@
+const fullscreenButton = document.getElementById('Full');
 function Fullscreen() {
     let doc = window.document;
     let docEl = doc.documentElement;
@@ -7,7 +8,9 @@ function Fullscreen() {
 
     if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
         requestFullscreen.call(docEl);
+        fullscreenButton.textContent = "ExitFullScreen";
     } else {
         exitFullscreen.call(doc);
+        fullscreenButton.textContent = "FullScreen";
     }
 }
